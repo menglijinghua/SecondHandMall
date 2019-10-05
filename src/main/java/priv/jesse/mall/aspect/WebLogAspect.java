@@ -31,6 +31,12 @@ public class WebLogAspect {
     public void webLog() {
     }
 
+    /**
+     * JoinPoint对象封装了SpringAop中切面方法的信息,
+     * 在切面方法中添加JoinPoint参数,就可以获取到封装了该方法信息的JoinPoint对象.
+     * @param joinPoint
+     * @throws Throwable
+     */
     @Before("webLog()")
     public void doBefore(JoinPoint joinPoint) throws Throwable {
         startTime.set(System.currentTimeMillis());

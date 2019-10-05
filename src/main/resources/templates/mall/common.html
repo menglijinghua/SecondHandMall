@@ -67,7 +67,7 @@
                     <dd th:if="${session.user != null}"><a href="/mall/user/logout.do"><i class="fa fa-sign-out"></i> 退出登录</a></dd>
                     <dd th:if="${session.user != null}"><a href="/mall/order/toList.html"><i class="fa fa-list"></i> 我的订单</a></dd>
                     <dd th:if="${session.user != null}"><a href="/mall/product/toCart.html"><i class="fa fa-shopping-cart"></i> 购物车</a></dd>
-                    <dd th:if="${session.user != null}"><a href="/mall/product/toAdd.html"><i class="fa fa-shopping-cart"></i>添加</a></dd>
+                    <dd th:if="${session.user != null}"><a href="/mall/user/toAdd.html"><i class="fa fa-shopping-cart"></i>发布商品</a></dd>
                     <dd th:if="${session.user == null}"><a href="/mall/user/toLogin.html"><i class="fa fa-sign-in"></i> 登录</a></dd>
                     <dd th:if="${session.user == null}"><a href="/mall/user/toRegister.html"><i class="fa fa-user-plus"></i> 注册</a></dd>
                 </dl>

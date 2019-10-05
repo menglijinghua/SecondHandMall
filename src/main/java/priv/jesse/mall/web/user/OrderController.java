@@ -101,7 +101,7 @@ public class OrderController {
     }
 
     /**
-     * 确认收货
+     * 删除收货
      * @param orderId
      * @param response
      * @return
